@@ -1,0 +1,44 @@
+1/12/2017
+
+DONE 1- Footer - give more spaces between elements
+DONE 2- Footer - on large screens don't make it at the bottom.
+		Note: Kept it for other pages when needed;
+		ex. applied on Profile page with custom class 
+		called 'content-container-fixed-footer-at-bottom
+DONE 3- Mobile - Change the direction of menu  slide
+DONE 4- Mobile - On landing page remove the mobile and keep the app links.
+DONE 5- Mobile - Menu should keep the width and not jumping when toggle.
+DONE 6- Login Page - the header should have more spaces with keeping the current space from bottom.
+DONE 7- Login Page - Replace colors depends on the image Bushra will send.
+	  the change replace (8) colors
+DONE 8- Login Page - On change color change the border color below it.
+
+Done 9- All Forms buttons - fix the alignment 
+
+DONE 10- Login Page - Category filtration give it a margin around 8px
+DONE 11- Menu - Create a sub menu of sub menu (Multi level menu)
+		 Note: Applied only landing page
+DONE 12- Login Page - the top circles should have active style (Bushra will send).
+
+
+Done 13- In all Form Pages check spaces between boxes.
+
+
+DONE 14- Profile Page - Check the font used there
+
+
+Done 15- Add drive Page - Boxes to be same as design.
+Done 16- Add drive Page - check boxes curve.
+
+
+DONE 17- The Map - Vertically middle aligned the strip menu.
+DONE 18- The Map - Pop ups should have more spaces and larger texts.
+DONE 19- The Map - Pop ups should have curve borders.
+DONE 20- The Map - Pop ups make it nearest the top.
+DONE 21- The Map - Pop ups submit it  check the behavior.
+DONE 22- Home services - show images on pop ups.
+23- Home services - Services rating will be data tables CHANGE REQUEST (waiting Mohamad khazendar to send the sample)
+DONE 24- Home services - Larger text and circles Bushra will send.
+DONE 25- Home services - Working hours change the section CHANGE REQUEST (Bushra will send) 
+25- Home services - Check spaces between the boxes.
+Done **Add winch on mobile fag3a service provider

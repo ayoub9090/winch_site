@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="image/x-icon" rel="shortcut icon" href="images/favicon.png">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Winch</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!--<link href="css/bootstrap-rtl.min.css" rel="stylesheet">--><!-- removed regarding english language -->
+    <!-- Custom CSS -->
+    
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">	
+	<link href="css/bootstrap-select.min.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/lightbox.css" rel="stylesheet">
+	<link href="css/aos.css" rel="stylesheet">
+	<link href="css/star-rating.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cairo&subset=arabic" type="text/css">
+	
+
+</head>
+
+<body>
+    
+
+    
+    <div class="site_Container wide">
+	
+		
+		<!-- Only One fader in the page -->
+		<div class="full__fader"></div>
+		
+		
+        <!--header-->
+        <div class="fixed_header">
+            <div class="container">
+               				
+						<nav class="navbar navbar-default main-header">
+						  <div class="container-fluid">
+						  <div class="row-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+							  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							  </button>
+							  <a class="navbar-brand" href="#"><img title="Logo" alt="Logo" src="images/logo.png"></a>
+							</div>
+
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							  <ul class="nav navbar-nav navbar-right">
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Support</a></li>
+								
+								<li class="dropdown">
+								  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage <span class="caret"></span></a>
+								  <ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									
+								  </ul>
+								</li>
+								<li><a href="#">AR</a></li>
+							  </ul>
+							</div><!-- /.navbar-collapse -->
+							</div>
+						  </div><!-- /.container-fluid -->
+						</nav>
+					
+			
+            </div>
+        </div>
+        <!--End-header-->
+
+       <!--site Body Content-->		
+			<!-- MAP -->
+			<div class="wide custome-for-map">
+				<div class="container">
+					
+					<div class="map-links">
+						<div class="aligned-div">
+							<div class="middle-div">
+							<a href="#">
+									<img src="images/lockout.png" />
+									<span>Lock Out</span>
+								</a>
+							<a href="javascript:showChoseCar()">
+									<img src="images/tire.png" />
+									<span>Tire</span>
+								</a>
+							<a href="javascript:showTowingPopup();">
+									<img src="images/towing.png" />
+									<span>Towing</span>
+								</a>
+							<a href="javascript:$('#first-notification').fadeIn();">
+									<img src="images/fuel.png" />
+									<span>Fuel</span>
+								</a>
+							<a href="javascript:showRatingPopup();">
+									<img src="images/battery.png" />
+									<span>Battery</span>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+					<!-- 1st notification - request notification -->
+					<div class="first-notification map-notification" id="first-notification">
+						<p><span class="pull-left">Request Number</span><span class="pull-right">#8777</span></p>
+						<p><span class="pull-left">Driver Name</span><span class="pull-right">Johny Dibb</span></p>
+						<p><span class="pull-left">Driver Phone</span><span class="pull-right">0076255555</span></p>
+						<p><span class="pull-left">Plate Number</span><span class="pull-right">123456</span></p>
+						<p class="black">
+							<span class="pull-left"><a href="javascript:$('#first-notification').fadeOut();">Hide</a></span>
+							<span class="pull-right"><a href="javascript:dismissService();">Dismiss service</a></span>
+						</p>
+					</div>
+					<!-- END 1st notification - request notification -->
+					
+					<!-- Towing Service popup -->
+					<div class="towing-popup map-notification with-fade" id="towing-popup">
+						<div class="popup-header text-center">
+							<img src="images/truck-img.png" width="50" height="auto" />
+							<p>Thanks for choosing towing service</p>
+						</div>
+						<div class="popup-content text-left">
+							<h4>please inform us your vehicle stuck with:</h4>
+							<form role="form" class="towel-form" onsubmit="hideTowingPopup()">
+								<div class="form-group">
+									<input type="radio" checked name="radioValue" id="val1" value="val1" /> 
+									<label for="val1"><span></span>You are stuck on grass, mud, snow, sand or water</label>
+								</div>
+								<div class="form-group">
+									<input type="radio" name="radioValue" value="val2" id="val2" /> 
+									<label for="val2"><span></span>You have slide of the road</label>
+								</div>
+								<div class="form-group">
+									<input type="radio" name="radioValue" value="val3" id="val3" /> 
+									<label for="val3"><span></span>One or more weels have no traction</label>
+								</div>
+								<div class="row">
+									<input type="button" class="btn btn-lg btn-success btn-block" value="SUBMIT">
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- End Towing Service popup -->
+
+					
+					<!-- chose-car popup -->
+					<div class="chose-car-popup map-notification with-fade" id="chose-car">
+						<!-- close icon  -->
+						<div class='closePopup'>
+							<button type="button" class="close" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<!-- close icon end -->
+						<div class="popup-content text-left">
+							<h4>please chose your car that needs a repair:</h4>
+							<form role="form" class="towel-form" onsubmit="hideChoseCar()">
+								<div class="form-group">
+									<input type="radio" name="radioValueCar" value="valCar1" id="valCar1" /> 
+									<label for="valCar1"><span></span>KIA / Optima<br>Plate number: 99878</label>
+								</div>
+								<div class="form-group">
+									<input type="radio" name="radioValueCar" value="valCar2" id="valCar2" /> 
+									<label for="valCar2"><span></span>BMW / X5<br>Plate number: 99878</label>
+								</div>
+								
+								<div class="row">
+									<input type="button" class="btn btn-lg btn-success btn-block" value="SUBMIT">
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- End chose-car popup -->					
+					
+					<!-- rating popup -->
+					<div class="rating-popup  map-notification with-fade" id="rating-popup">
+						<div class="popup-content text-center">
+							<h3>THANKS for using WINCH services</h3>
+							<h4>Please tap to the star to <b>Rate</b> the service</h4>
+							<form role="form" class="towel-form" onsubmit="hideRatingPopup()">
+								<div class="form-group">
+									<input id="rating-value" name="rating-value" class="rating rating-loading" data-min="0" data-max="5" data-step="1">
+								</div>
+						
+								<div class="row">
+									<input type="button" class="btn btn-lg btn-success btn-block" value="RATE">
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- End rating popup -->
+					
+				</div>
+				<div class="the_map" id="the_map"></div>
+			</div>
+			<!-- END MAP -->
+		<!--End site Body Content-->
+       
+		
+		
+        <!--footer-->
+        <div class="footer">
+            <div class="container text-center">
+                <div class="follow_Us">Follow us</div>
+                <div class="social_media_links">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="cpy_Right">copyright © 2016 WINCH</div>
+            </div>
+        </div>
+        <!--End footer-->
+    </div>
+    
+
+
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/jquery.matchHeight-min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/star-rating.min.js"></script>
+<script src="js/app.js"></script>
+
+<!-- ONLY ON MAP PAGE -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGZkQpPNRKU8hE5dD0nC1Vgnw9zXM9wQs&callback=the_map"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+</body>
+</html>
